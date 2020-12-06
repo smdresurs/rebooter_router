@@ -4,7 +4,7 @@ import time
 import subprocess
 
 
-def rebootroter():
+def rebootrouter():
     import time
     HOST = "192.168.100.1"
     tn = telnetlib.Telnet(HOST)
@@ -27,6 +27,6 @@ for ping in range(1):
     else:
         print ("ping to", address, "failed!")
         print("Start rebooter function")
-        rebootroter()
+        rebootrouter()
         time.sleep(5)#Задержка на прогрузку
         print("Send mail")
